@@ -1426,7 +1426,7 @@ section {
 
 .h2 {
     font-size: 44px;
-    line-height: 44px;
+    line-height: 50px;
     color: transparent !important;
     background: linear-gradient(45deg, rgba(243, 188, 219, 1), rgba(126, 77, 103, 1));
     background-clip: text;
