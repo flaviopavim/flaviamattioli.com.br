@@ -56,14 +56,79 @@ h6 {
     margin-top: 90px;
 }
 
-section {
+/*section {
     
+}*/
+
+
+
+
+.h1 {
+    margin-bottom: 20px;
+}
+
+.h2 {
+    font-size: 44px;
+    line-height: 50px;
+    color: transparent !important;
+    background: linear-gradient(45deg, rgba(243, 188, 219, 1), rgba(126, 77, 103, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+.h3 {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+
+
+
+
+.first-container {
+    margin-top: 90px;
+}
+
+
+
+
+
+
+
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
 }
 @media (max-width: 768px) {
-    section {
-        padding: 0 30px;
+    .container {
+        padding: 0 30px !important;
+        /*padding: 0 15px;*/
+    }
+    .content {
+        background-color: rgba(255,255,255,0.5);
+        padding: 15px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .first-container {
+        margin-top: 60px;
     }
 }
+
+
 
 .right {
     float: right;
@@ -1402,7 +1467,6 @@ section {
 
 
 
-
 #footer .footer-top .footer-info {
     /*color: #d49daf !important;*/
     /*border-top: 4px solid #d49daf !important;*/
@@ -1419,27 +1483,6 @@ section {
     -webkit-background-clip: text;
 }
 
-
-.h1 {
-    margin-bottom: 20px;
-}
-
-.h2 {
-    font-size: 44px;
-    line-height: 50px;
-    color: transparent !important;
-    background: linear-gradient(45deg, rgba(243, 188, 219, 1), rgba(126, 77, 103, 1));
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-weight: 600;
-}
-
-.h3 {
-    margin: 30px 0;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: justify;
-}
 
 
 
@@ -1502,6 +1545,15 @@ section {
     margin-top: 88px;
 }
 
+@media (max-width: 768px) {
+    #hero {
+        background: url(../../img/fundo1.jpg) top left; /* Mantendo a imagem no canto superior esquerdo */
+        background-size: cover;
+        background-position: 800px top; /* Movendo a imagem 10 pixels para a direita */
+        position: relative;
+    }
+}
+
 .about-btn, .cta-btn {
     padding: 12px 30px 12px 30px;
     color: #fff;
@@ -1517,7 +1569,21 @@ section {
     /*background-clip: text;*/
     /*-webkit-background-clip: text;*/
 }
-.about-btn:hover, .cta-btn:hover {
+
+.about-btn:link, 
+.cta-btn:link,
+.about-btn:active, 
+.cta-btn:active,
+.about-btn:after, 
+.cta-btn:after,
+.about-btn:before, 
+.cta-btn:before,
+.about-btn:focus, 
+.cta-btn:focus,
+.about-btn:focus, 
+.cta-btn:focus,
+.about-btn:hover, 
+.cta-btn:hover {
     padding: 12px 30px 12px 30px;
     color: #fff;
     border-radius: 50px;
@@ -1667,3 +1733,7 @@ section {
 .contact .php-email-form button[type=submit]:hover {
     background: #7d4d67;
 }
+
+
+
+
