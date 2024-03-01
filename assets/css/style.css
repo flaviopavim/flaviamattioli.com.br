@@ -77,6 +77,26 @@ h6 {
     font-weight: 600;
 }
 
+.h22 {
+    font-size: 44px;
+    line-height: 50px;
+/*    color: transparent !important;
+    background: linear-gradient(45deg, rgba(243, 188, 219, 1), rgba(126, 77, 103, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    */
+    font-weight: 600;
+}
+
+.gradient-text-h1 {
+    color: transparent !important;
+    background: linear-gradient(45deg, rgba(243, 188, 219, 1), rgba(126, 77, 103, 1));
+    /*background: linear-gradient(45deg, var(--color1), var(--color2));*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
 .h3 {
     margin: 30px 0;
     font-size: 20px;
