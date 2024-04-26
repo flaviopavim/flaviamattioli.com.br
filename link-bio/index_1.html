@@ -50,8 +50,6 @@
 
         <style>
             body {
-                background: url('../img/link-bio-background.png') 100%;
-                background-position-x: 200px;
                 background-color: #d3d3dd;
             }
 
@@ -68,13 +66,40 @@
                 height: 30px;
             }
 
+
+            #inicio {
+                /*margin-top: 50px;*/
+                /*                position: fixed; 
+                                top: 0; 
+                                width: 0; 
+                                height: 0;*/
+                /*margin-bottom: 100px;*/
+                clear: both;
+                height: 50px;
+            }
+
+            #main {
+                /*margin: 150px 0;*/
+
+            }
+
+            #container {
+                width: 100%;
+                /*background: url('../img/link-bio-background.png') 100% ;*/
+                /*background: url('../img/link-bio-background.png');*/
+                /*background-image: url('../img/link-bio-background.png') auto 100%;*/
+            }
+
+            /*            #background {*/
+            /*position: relative;*/
+            /*background: url('../img/link-bio-background.png') 100% 100%;*/
+            /*}*/
+
             #flavinha {
                 position: relative;
                 z-index: 1;
                 display: block;
                 width: 100%;
-                
-                margin-top: -50px;
             }
 
             #fade-out-1, #fade-out-2, #fade-out-2 {
@@ -107,21 +132,12 @@
                 background-color: #d49daf;
                 margin-bottom: 20px;
                 color: #fff;
-                font-size: 18px;
-                font-weight: bold;
-                position: relative;
+                position: relative; /* Adiciona posição relativa para que a sombra se aplique corretamente */
                 border-radius: 4px;
-                box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.2);
+                box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
             }
             #links a:hover {
-                box-shadow: 5px 12px 4px rgba(0, 0, 0, 0.2);
-            }
-            
-            #crp {
-                font-size: 16px;
-                color: #7d4d67;
-                letter-spacing: 2px;
-                font-weight: 600;
+                box-shadow: 5px 12px 4px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
             }
             
             @media (max-width: 768px) {
@@ -129,14 +145,9 @@
                     width: 100%;
                 }
                 body, #inicio, #main {
-                    /*background-image: none;*/
-                    /*background-color: #d3d3dd !important;*/
-                    background-position-x: 0px;
+                    background-image: none;
+                    background-color: #d3d3dd !important;
                 }
-/*                body {
-                    background: url('../img/link-bio-background.png') 100%;
-                    background-position-x: 1000px;
-                }*/
             }
 
         </style>
@@ -144,40 +155,64 @@
     </head>
 
     <body>
-        <main id="main">
-            <div class="container">
-                <center>
-                    <div id="flavinha">
-                        <img class="img-responsive" src="../img/foto-mobile-2.png"/>
-                    </div>
 
-                    <div id="fade-out-1"></div>
-                    <div id="fade-out-2"></div>
-                    <div id="fade-out-3"></div>
-
-                    <img id="logo-bio" src="../img/link-bio-logo.png" alt=""/>
-
-                    <div id="links">
-                        <a href="https://api.whatsapp.com/send?phone=5518998078573&text=Ol%C3%A1%20Fl%C3%A1via%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" target="_blank">PSICOTERAPIA INDIVIDUAL</a>
-                        <a href="https://api.whatsapp.com/send?phone=5518998078573&text=Ol%C3%A1%20Fl%C3%A1via%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" target="_blank">PSICOTERAPIA DE CASAL</a>
-                        <a href="https://api.whatsapp.com/send?phone=5518998078573&text=Ol%C3%A1%20Fl%C3%A1via%2C%20voc%C3%AA%20poderia%20me%20ajudar%3F" target="_blank">SUPERVISÃO (PARA PSICÓLOGOS)</a>
-                        <a href="https://flaviamattioli.com.br/" target="_blank">SITE</a>
-                    </div>
-                    <!--<img src="../img/link-bio-background.png" alt=""/>-->
-                    <div class="br-30"></div>
-                    <div id="crp">
-                        FLÁVIA D. MATTIOLI IWATA<br>
-                        CRP 06/130285
-                    </div>
-                </center>
+<!--        <header id="header" class="fixed-top" style="background-color: #d49daf">
+            <div class="container d-flex align-items-center justify-content-between position-relative">
+                <div class="logo" style="padding: 0; margin: 0;">
+                    <a class="scrollto" href="../#inicio">
+                        <img src="../img/logo-sombra.png" alt="" />
+                    </a>
+                </div>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto" href="#inicio">Início</a></li>
+                        <li><a class="nav-link scrollto" href="../#trabalhos">Trabalhos</a></li>
+                        <li><a class="nav-link scrollto" href="../#sobre">Sobre</a></li>
+                        <li><a class="nav-link scrollto" href="../#perfil">Perfil</a></li>
+                        <li><a class="nav-link scrollto" href="../#perguntas-frequentes">Perguntas frequentes</a></li>
+                        <li><a class="nav-link scrollto" href="../#atendimento">Atendimento</a></li>
+                        <li><a class="nav-link scrollto" href="../#contato">Contato</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
             </div>
-            <div class="br-30"></div>
-            <div class="br-30"></div>
-        </main>
-        
-<!--        <footer id="footer">
+        </header>
+
+        <div id="inicio"></div>-->
+
+        <!--        <div id="background"></div>-->
+        <div id="container">
+            <main id="main">
+                <div class="container">
+                    <center>
+                        <div id="flavinha">
+                            <img class="img-responsive" src="../img/foto-mobile-2.png"/>
+                        </div>
+
+                        <div id="fade-out-1"></div>
+                        <div id="fade-out-2"></div>
+                        <div id="fade-out-3"></div>
+
+                        <img id="logo-bio" src="../img/link-bio-logo.png" alt=""/>
+
+                        <div id="links">
+                            <a href="" target="_blank">PSICOTERAPIA INDIVIDUAL</a>
+                            <a href="" target="_blank">PSICOTERAPIA DE CASAL</a>
+                            <a href="" target="_blank">SUPERVISÃO (PARA PSICÓLOGOS)</a>
+                            <a href="https://flaviamattioli.com.br/" target="_blank">SITE</a>
+                        </div>
+                        <!--<img src="../img/link-bio-background.png" alt=""/>-->
+                    </center>
+                </div>
+                <div class="br-30"></div>
+                <div class="br-30"></div>
+            </main>
+        </div>
+
+        <footer id="footer">
             <div class="container">
                 <div class="copyright">
+                    <!--&copy; Copyright <strong><span>Squadfree</span></strong>. All Rights Reserved-->
                     Todos os direitos reservados <br>
                     <strong><span>© Flávia D. Mattioli Iwata Psicóloga – CRP 06/130285</span></strong>
                 </div>
@@ -185,7 +220,7 @@
                     Site feito com carinho por <a href="https://flaviopavim.com.br/" target="_blank" style="font-weight: bold; color: #fff;">Flávio Pavim</a>
                 </div>
             </div>
-        </footer>-->
+        </footer><!-- End Footer -->
 
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
